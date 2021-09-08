@@ -22,12 +22,13 @@
             <Property Name="StatusText" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Partner Text"/>
          </EntityType>
 
-         <EntityType Name="PartnerType" sap:label="Partner" sap:content-version="1">
+         <EntityType Name="PartnerType" sap:label="Partner" sap:semantics="aggregate"  sap:content-version="1">
             <Key>
                <PropertyRef Name="PartnerID"/>
             </Key>
-            <Property Name="PartnerID" Type="Edm.String" MaxLength="3" Nullable="false" sap:sortable="false" sap:filterable="false"  sap:label="Partner ID" />
-            <Property Name="PartnerText" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Partner Text"/>
+            <Property Name="PartnerID" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension"  Nullable="false" sap:sortable="false" sap:filterable="false"  sap:label="Partner ID" />
+            <Property Name="PartnerText" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension"  sap:display-format="UpperCase" sap:label="Partner Text"/>
+            <Property Name="Rating" Type="Edm.Int32" sap:aggregation-role="measure"  sap:label="Rating" />
          </EntityType>
 
          <EntityContainer Name="ZDATA_SET_SRVEntities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">

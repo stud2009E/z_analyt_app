@@ -1,42 +1,52 @@
 [
 	{
 		"PartnerID": "001",
-		"PartnerText": "Samsung"
+		"PartnerText": "Samsung",
+		"Rating": 3
 	},
 	{
 		"PartnerID": "002",
-		"PartnerText": "Apple"
+		"PartnerText": "Apple",
+		"Rating": 4
 	},
 	{
 		"PartnerID": "003",
-		"PartnerText": "Cisco"
+		"PartnerText": "Cisco",
+		"Rating": 7
 	},
 	{
 		"PartnerID": "004",
-		"PartnerText": "HP"
+		"PartnerText": "HP",
+		"Rating": 9
 	},
 	{
 		"PartnerID": "005",
-		"PartnerText": "Dell"
+		"PartnerText": "Dell",
+		"Rating": 8
 	},
 	{
 		"PartnerID": "006",
-		"PartnerText": "Sony"
+		"PartnerText": "Sony",
+		"Rating": 3
 	},
 	{
 		"PartnerID": "007",
-		"PartnerText": "SAP"
+		"PartnerText": "SAP",
+		"Rating": 4
 	},
 	{
 		"PartnerID": "008",
-		"PartnerText": "Oracle"
+		"PartnerText": "Oracle",
+		"Rating": 5
 	},
 	{
 		"PartnerID": "009",
-		"PartnerText": "Xiami"
+		"PartnerText": "Xiami",
+		"Rating": 6
 	},
 	{
 		"PartnerID": "010",
-		"PartnerText": "Amazon"
+		"PartnerText": "Amazon",
+		"Rating": 4
 	}
 ]

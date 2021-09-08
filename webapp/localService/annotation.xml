@@ -17,7 +17,7 @@
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="annotation.ZDATA_SET_SRV">
 			<Annotations Target="Metadata.ActDataType">
-				<Annotation Term="UI.SelectionPresentationVariant" Qualifier="act">
+				<Annotation Term="UI.SelectionPresentationVariant" Qualifier="Default">
 					<Record Type="UI.SelectionPresentationVariantType">
 						<PropertyValue Property="SelectionVariant">
 							<Record Type="UI.SelectionVariantType">
@@ -28,8 +28,8 @@
 							<Record Type="UI.PresentationVariantType">
 								<PropertyValue Property="Visualizations">
 									<Collection>
-										<AnnotationPath>@UI.LineItem</AnnotationPath>
-										<AnnotationPath>@UI.Chart</AnnotationPath>
+										<AnnotationPath>@UI.LineItem#Default</AnnotationPath>
+										<AnnotationPath>@UI.Chart#Default</AnnotationPath>
 									</Collection>
 								</PropertyValue>
 							</Record>
@@ -37,6 +37,7 @@
 					</Record>
 				</Annotation>
 
+				
 				<Annotation Term="UI.SelectionFields" >
 					<Collection>
 						<PropertyPath>Partner</PropertyPath>
@@ -44,7 +45,7 @@
 					</Collection>
 				</Annotation>
 
-				<Annotation Term="UI.Chart">
+				<Annotation Term="UI.Chart" Qualifier="Default">
 					<Record Type="UI.ChartDefinitionType">
 						<PropertyValue Property="ChartType" EnumMember="UI.ChartType/Line"/>
 						<PropertyValue Property="Dimensions">
@@ -62,8 +63,7 @@
 					</Record>
 				</Annotation>
 				
-
-				<Annotation Term="UI.LineItem">
+				<Annotation Term="UI.LineItem" Qualifier="Default">
 					<Collection>
 						<Record Type="UI.DataField">
 							<PropertyValue Property="Value" Path="ID"/>
@@ -85,6 +85,151 @@
 						</Record>
 					</Collection>
 				</Annotation>
+			</Annotations>
+
+			<Annotations Target="Metadata.ActDataType/Partner">
+
+				<Annotation Term="Common.ValueList">
+					<Record Type="Common.ValueListType">
+						<PropertyValue Property="CollectionPath" String="PartnerSet"/>
+						<PropertyValue Property="Label" String="{@i18n>partnerSH}"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut">
+									<PropertyValue Property="LocalDataProperty" PropertyPath="Partner"/>
+									<PropertyValue Property="ValueListProperty" String="PartnerID"/>
+								</Record>
+								<Record Type="Common.ValueListParameterDisplayOnly">
+									<PropertyValue Property="ValueListProperty" String="PartnerText"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+
+				<Annotation Term="Common.ValueList" Qualifier="VisualFilterPartner">
+					<Record Type="Common.ValueListType">
+						<PropertyValue Property="PresentationVariantQualifier" String="partnerByRating"/>
+						<PropertyValue Property="SelectionVariantQualifier" String="partnerByRating"/>
+						<PropertyValue Property="CollectionPath" String="PartnerSet"/>
+						<PropertyValue Property="SearchSupported" Bool="false"/>
+						<PropertyValue Property="Label" String="{@i18n>partnerSH}"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut">
+									<PropertyValue Property="LocalDataProperty" PropertyPath="Partner"/>
+									<PropertyValue Property="ValueListProperty" String="PartnerID"/>
+								</Record>
+								<Record Type="Common.ValueListParameterDisplayOnly">
+									<PropertyValue Property="ValueListProperty" String="PartnerText"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+
+			<Annotations Target="Metadata.ActDataType/Status">
+				<Annotation Term="Common.ValueList">
+					<Record Type="Common.ValueListType">
+						<PropertyValue Property="CollectionPath" String="StatusSet"/>
+						<PropertyValue Property="Label" String="{@i18n>statusSH}"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut">
+									<PropertyValue Property="LocalDataProperty" PropertyPath="Status"/>
+									<PropertyValue Property="ValueListProperty" String="StatusID"/>
+								</Record>
+								<Record Type="Common.ValueListParameterDisplayOnly">
+									<PropertyValue Property="ValueListProperty" String="StatusText"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="Common.ValueListWithFixedValues" Bool="true"/>
+			</Annotations>
+
+			
+			<Annotations Target="Metadata.PartnerType">
+				<Annotation Term="UI.PresentationVariant" Qualifier="partnerByRating">
+					<Record Type="UI.PresentationVariantType">
+						<PropertyValue Property="SortOrder">
+							<Collection>
+								<Record Type="Common.SortOrderType">
+									<PropertyValue Property="Property" PropertyPath="Rating"/>
+									<PropertyValue Property="Descending" Bool="true"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Visualizations">
+							<Collection>
+								<AnnotationPath>@UI.Chart#partnerByRating</AnnotationPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+
+				<Annotation Term="UI.SelectionVariant" Qualifier="partnerByRating">
+					<Record Type="UI.SelectionVariantType">
+						<PropertyValue Property="SelectOptions">
+							<Collection>
+								<Record Type="UI.SelectOptionType">
+									<PropertyValue Property="PropertyName" PropertyPath="Rating"/>
+									<PropertyValue Property="Ranges">
+										<Collection>
+											<Record Type="UI.SelectionRangeType">
+												<PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+												<PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/GE"/>
+												<PropertyValue Property="Low" String="5"/>
+											</Record>
+										</Collection>
+									</PropertyValue>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+
+				<Annotation Term="UI.Chart" Qualifier="partnerByRating">
+					<Record Type="UI.ChartDefinitionType">
+						<PropertyValue Property="ChartType" EnumMember="UI.ChartType/Donut"/>
+						<PropertyValue Property="Dimensions">
+							<Collection>
+								<PropertyPath>PartnerID</PropertyPath>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="DimensionAttributes">
+							<Collection>
+								<Record Type="UI.ChartDimensionAttributeType">
+									<PropertyValue Property="Dimension" PropertyPath="PartnerID"/>
+									<PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Category"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Measures">
+							<Collection>
+								<PropertyPath>Rating</PropertyPath>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="MeasureAttributes">
+							<Collection>
+								<Record Type="UI.ChartMeasureAttributeType">
+									<PropertyValue Property="Measure" PropertyPath="Rating"/>
+									<PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+
+			<Annotations Target="Metadata.PartnerType/PartnerID">
+				<Annotation Term="Common.Text" Path="PartnerText"/>
+			</Annotations>
+
+			<Annotations Target="Metadata.StatusType/StatusID">
+				<Annotation Term="Common.Text" Path="StatusText"/>
 			</Annotations>
 		</Schema>
 	</edmx:DataServices>

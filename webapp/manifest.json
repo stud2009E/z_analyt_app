@@ -126,28 +126,13 @@
 		"extends": {
 			"extensions": {
 				"sap.ui.viewExtensions": {
-					"sap.suite.ui.generic.template.ObjectPage.view.Details": {
-						"ReplaceFacet|ActDataSet|Example_Facet": {
-							"type": "XML",
-							"className": "sap.ui.core.mvc.View",
-							"viewName": "z.anlt.app.ext.view.Example"
-						}
+					"sap.suite.ui.generic.template.AnalyticalListPage.view.AnalyticalListPage": {
+						
 					}
 				},
 				"sap.ui.controllerExtensions": {
-					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
-						"controllerName": "z.anlt.app.ext.controller.ListReportExt"
-					},
-					"sap.suite.ui.generic.template.ObjectPage.view.Details": {
-						"controllerName": "z.anlt.app.ext.controller.ObjectPageExt",
-						"sap.ui.generic.app": {
-							"ActDataSet": {
-								"EntitySet": "ActDataSet",
-								"Header": {
-									"Actions": {}
-								}
-							}
-						}
+					"sap.suite.ui.generic.template.AnalyticalListPage.view.AnalyticalListPage": {
+						"controllerName": "z.anlt.app.ext.controller.AnalyticalListPageExt"
 					}
 				}
 			}
@@ -175,17 +160,17 @@
 						"multiSelect": true,
 						"selectAll": true,
 						"selectionLimit": 20
-					}
-				},
-				"qualifier": "act",
-				"condensedTableLayout": true,
-				"smartVariantManagement": true,
-				"defaultContentView": "charttable",
-				"defaultFilterMode": "visual",
-				"showGoButtonOnFilterBar": true,
-				"contentTitle": "{{contentAreaTitle}}",
-				"autoHide":false,
-				"filterDefaultsFromSelectionVariant":false
+					},
+					"qualifier": "Default",
+					"condensedTableLayout": true,
+					"smartVariantManagement": true,
+					"defaultContentView": "charttable",
+					"defaultFilterMode": "visual",
+					"showGoButtonOnFilterBar": true,
+					"contentTitle": "{{contentAreaTitle}}",
+					"autoHide":false,
+					"filterDefaultsFromSelectionVariant":false
+				}
 			}
 		}]
 	}
