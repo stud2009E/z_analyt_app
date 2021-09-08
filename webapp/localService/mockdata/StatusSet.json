@@ -1,0 +1,14 @@
+[
+	{
+		"StatusID": "001",
+		"StatusText": "Project"
+	},
+	{
+		"StatusID": "002",
+		"StatusText": "Process"
+	},
+	{
+		"StatusID": "003",
+		"StatusText": "Done"
+	}
+]

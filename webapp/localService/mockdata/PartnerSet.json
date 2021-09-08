@@ -1,0 +1,42 @@
+[
+	{
+		"PartnerID": "001",
+		"PartnerText": "Samsung"
+	},
+	{
+		"PartnerID": "002",
+		"PartnerText": "Apple"
+	},
+	{
+		"PartnerID": "003",
+		"PartnerText": "Cisco"
+	},
+	{
+		"PartnerID": "004",
+		"PartnerText": "HP"
+	},
+	{
+		"PartnerID": "005",
+		"PartnerText": "Dell"
+	},
+	{
+		"PartnerID": "006",
+		"PartnerText": "Sony"
+	},
+	{
+		"PartnerID": "007",
+		"PartnerText": "SAP"
+	},
+	{
+		"PartnerID": "008",
+		"PartnerText": "Oracle"
+	},
+	{
+		"PartnerID": "009",
+		"PartnerText": "Xiami"
+	},
+	{
+		"PartnerID": "010",
+		"PartnerText": "Amazon"
+	}
+]
