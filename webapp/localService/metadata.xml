@@ -12,6 +12,15 @@
             <Property Name="Title" Type="Edm.String" MaxLength="30" sap:aggregation-role="dimension" sap:label="Act name"/>
             <Property Name="Count" Type="Edm.Int32" sap:aggregation-role="measure" sap:label="Count" sap:filterable="false"/>
             <Property Name="Sum" Type="Edm.Decimal" Precision="19" Scale="3" sap:aggregation-role="measure" sap:label="Summ" sap:filterable="false"/>
+            <NavigationProperty Name="to_Status" 
+               Relationship="ZDATA_SET_SRV.assoc_StatusText" 
+               FromRole="FromRole_StatusText" 
+               ToRole="ToRole_StatusText"/>
+
+            <NavigationProperty Name="to_Partner" 
+               Relationship="ZDATA_SET_SRV.assoc_PartnerText" 
+               FromRole="FromRole_PartnerText" 
+               ToRole="ToRole_PartnerText"/>
          </EntityType>
 
          <EntityType Name="StatusType" sap:label="Status" sap:content-version="1">
@@ -31,10 +40,48 @@
             <Property Name="Rating" Type="Edm.Int32" sap:aggregation-role="measure"  sap:label="Rating" />
          </EntityType>
 
+         <Association Name="assoc_StatusText" sap:content-version="1">
+            <End Type="ZDATA_SET_SRV.ActDataType" Multiplicity="1" Role="FromRole_StatusText"/>
+            <End Type="ZDATA_SET_SRV.StatusType" Multiplicity="0..1" Role="ToRole_StatusText"/>
+            <ReferentialConstraint>
+               <Principal Role="FromRole_StatusText">
+                  <PropertyRef Name="Status"/>
+               </Principal>
+               <Dependent Role="ToRole_StatusText">
+                  <PropertyRef Name="StatusID"/>
+               </Dependent>
+            </ReferentialConstraint>
+         </Association>
+
+          <Association Name="assoc_PartnerText" sap:content-version="1">
+            <End Type="ZDATA_SET_SRV.ActDataType" Multiplicity="1" Role="FromRole_PartnerText"/>
+            <End Type="ZDATA_SET_SRV.PartnerType" Multiplicity="0..1" Role="ToRole_PartnerText"/>
+            <ReferentialConstraint>
+               <Principal Role="FromRole_PartnerText">
+                  <PropertyRef Name="Partner"/>
+               </Principal>
+               <Dependent Role="ToRole_PartnerText">
+                  <PropertyRef Name="PartnerID"/>
+               </Dependent>
+            </ReferentialConstraint>
+         </Association>
+
          <EntityContainer Name="ZDATA_SET_SRVEntities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
             <EntitySet Name="ActDataSet" EntityType="ZDATA_SET_SRV.ActDataType" sap:content-version="1" />
             <EntitySet Name="StatusSet" EntityType="ZDATA_SET_SRV.StatusType" sap:content-version="1" />
             <EntitySet Name="PartnerSet" EntityType="ZDATA_SET_SRV.PartnerType" sap:content-version="1" />
+
+            <AssociationSet Name="set_assoc_StatusText" Association="ZDATA_SET_SRV.assoc_StatusText" 
+               sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+               <End EntitySet="ActDataSet" Role="FromRole_StatusText"/>
+               <End EntitySet="StatusSet" Role="ToRole_StatusText"/>
+            </AssociationSet>
+
+            <AssociationSet Name="set_assoc_PartnerText" Association="ZDATA_SET_SRV.assoc_PartnerText" 
+               sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+               <End EntitySet="ActDataSet" Role="FromRole_PartnerText"/>
+               <End EntitySet="PartnerSet" Role="ToRole_PartnerText"/>
+            </AssociationSet>
          </EntityContainer>
       </Schema>
    </edmx:DataServices>

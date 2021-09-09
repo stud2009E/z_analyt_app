@@ -228,6 +228,14 @@
 				<Annotation Term="Common.Text" Path="PartnerText"/>
 			</Annotations>
 
+			<Annotations Target="Metadata.ActDataType/Status">
+				<Annotation Term="Common.Text" Path="to_Status/StatusText"/>
+			</Annotations>
+
+			<Annotations Target="Metadata.ActDataType/Partner">
+				<Annotation Term="Common.Text" Path="to_Partner/PartnerText"/>
+			</Annotations>
+
 			<Annotations Target="Metadata.StatusType/StatusID">
 				<Annotation Term="Common.Text" Path="StatusText"/>
 			</Annotations>

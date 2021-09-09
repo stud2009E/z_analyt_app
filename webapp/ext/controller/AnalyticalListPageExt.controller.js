@@ -18,6 +18,19 @@ sap.ui.define([], function(){
 
 		onBeforeRebindVisualFilterExtension: function(oEvent){
 
+		},
+
+		onListNavigationExtension: function(oEvent){
+			var oBindingContext = oEvent.getSource().getBindingContext();
+			var oObject = oBindingContext.getObject();
+
+			// oNavigationController.navigateExternal("");
+
+			return true;
+		},
+
+		onBeforeRebindTableExtension : function(oEvent){
+
 		}
 
 	});
