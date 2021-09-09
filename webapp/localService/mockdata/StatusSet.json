@@ -1,14 +1,17 @@
 [
 	{
 		"StatusID": "001",
-		"StatusText": "Project"
+		"StatusText": "Project",
+		"PartnersInStatus": 12
 	},
 	{
 		"StatusID": "002",
-		"StatusText": "Process"
+		"StatusText": "Process",
+		"PartnersInStatus": 23
 	},
 	{
 		"StatusID": "003",
-		"StatusText": "Done"
+		"StatusText": "Done",
+		"PartnersInStatus": 15
 	}
 ]

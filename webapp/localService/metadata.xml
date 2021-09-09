@@ -23,12 +23,13 @@
                ToRole="ToRole_PartnerText"/>
          </EntityType>
 
-         <EntityType Name="StatusType" sap:label="Status" sap:content-version="1">
+         <EntityType Name="StatusType" sap:semantics="aggregate" sap:label="Status" sap:content-version="1">
             <Key>
                <PropertyRef Name="StatusID"/>
             </Key>
-            <Property Name="StatusID" Type="Edm.String" MaxLength="3" Nullable="false" sap:sortable="false" sap:filterable="false"  sap:label="Status ID" />
-            <Property Name="StatusText" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Partner Text"/>
+            <Property Name="StatusID" Type="Edm.String" sap:aggregation-role="dimension" MaxLength="3" Nullable="false" sap:sortable="false" sap:filterable="false"  sap:label="Status ID" />
+            <Property Name="StatusText" Type="Edm.String" MaxLength="10" sap:display-format="UpperCase" sap:label="Status Text"/>
+            <Property Name="PartnersInStatus" Type="Edm.Int32" sap:aggregation-role="measure" sap:label="Partners in Status"/>
          </EntityType>
 
          <EntityType Name="PartnerType" sap:label="Partner" sap:semantics="aggregate"  sap:content-version="1">
