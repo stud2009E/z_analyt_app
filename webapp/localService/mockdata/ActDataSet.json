@@ -5,15 +5,17 @@
 		"Status": "001",
 		"Title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		"Count": 16,
-		"Sum": 2188
+		"Sum": 2188,
+		"StartDate": "20200101"
 	},
 	{
-		"ID": 2,
+		"ID": "2",
 		"Partner": "002",
 		"Status": "002",
 		"Title": "Praesent molestie mi sed est feugiat, eu mollis leo scelerisque.",
 		"Count": 35,
-		"Sum": 4466
+		"Sum": 4466,
+		"StartDate": "20200110"
 	},
 	{
 		"ID": "3",
@@ -21,7 +23,8 @@
 		"Status": "003",
 		"Title": "Donec rhoncus sapien id enim elementum tristique.",
 		"Count": 6,
-		"Sum": 1549
+		"Sum": 1549,
+		"StartDate": "20200120"
 	},
 	{
 		"ID": "4",
@@ -29,7 +32,8 @@
 		"Status": "001",
 		"Title": "Donec at metus vitae enim dapibus egestas.",
 		"Count": 42,
-		"Sum": 2802
+		"Sum": 2802,
+		"StartDate": "20200201"
 	},
 	{
 		"ID": "5",
@@ -37,7 +41,8 @@
 		"Status": "002",
 		"Title": "Pellentesque quis ligula non risus porta consectetur et ut risus.",
 		"Count": 89,
-		"Sum": 1331
+		"Sum": 1331,
+		"StartDate": "20200210"
 	},
 	{
 		"ID": "6",
@@ -45,7 +50,8 @@
 		"Status": "003",
 		"Title": "Sed ornare lectus ut dignissim porta.",
 		"Count": 18,
-		"Sum": 380
+		"Sum": 380,
+		"StartDate": "20200220"
 	},
 	{
 		"ID": "7",
@@ -53,7 +59,8 @@
 		"Status": "001",
 		"Title": "Donec semper neque sed arcu elementum, ac auctor arcu tincidunt.",
 		"Count": 70,
-		"Sum": 2248
+		"Sum": 2248,
+		"StartDate": "20200301"
 	},
 	{
 		"ID": "8",
@@ -61,7 +68,8 @@
 		"Status": "002",
 		"Title": "Aliquam egestas magna quis nunc interdum mollis.",
 		"Count": 84,
-		"Sum": 834
+		"Sum": 834,
+		"StartDate": "20200310"
 	},
 	{
 		"ID": "9",
@@ -69,7 +77,8 @@
 		"Status": "003",
 		"Title": "Praesent pretium felis sit amet ex pharetra, et consequat dolor euismod.",
 		"Count": 11,
-		"Sum": 2373
+		"Sum": 2373,
+		"StartDate": "20200320"
 	},
 	{
 		"ID": "10",
@@ -77,7 +86,8 @@
 		"Status": "001",
 		"Title": "Nam commodo lectus non augue mattis, at congue metus suscipit.",
 		"Count": 50,
-		"Sum": 2661
+		"Sum": 2661,
+		"StartDate": "20200401"
 	},
 	{
 		"ID": "11",
@@ -85,7 +95,8 @@
 		"Status": "002",
 		"Title": "Nunc bibendum dui sed ex ultricies, ut efficitur sapien ullamcorper.",
 		"Count": 62,
-		"Sum": 876
+		"Sum": 876,
+		"StartDate": "20200410"
 	},
 	{
 		"ID": "12",
@@ -93,7 +104,8 @@
 		"Status": "003",
 		"Title": "Pellentesque a quam volutpat, ultrices sem eu, mattis nibh.",
 		"Count": 74,
-		"Sum": 3467
+		"Sum": 3467,
+		"StartDate": "20200420"
 	},
 	{
 		"ID": "13",
@@ -101,7 +113,8 @@
 		"Status": "001",
 		"Title": "Pellentesque ut eros ac purus commodo venenatis.",
 		"Count": 64,
-		"Sum": 4970
+		"Sum": 4970,
+		"StartDate": "20200501"
 	},
 	{
 		"ID": "14",
@@ -109,7 +122,8 @@
 		"Status": "002",
 		"Title": "Aenean dictum purus in accumsan iaculis.",
 		"Count": 28,
-		"Sum": 3558
+		"Sum": 3558,
+		"StartDate": "20200510"
 	},
 	{
 		"ID": "15",
@@ -117,7 +131,8 @@
 		"Status": "003",
 		"Title": "Etiam hendrerit orci id dui tincidunt, gravida dignissim lacus cursus.",
 		"Count": 49,
-		"Sum": 3543
+		"Sum": 3543,
+		"StartDate": "20200520"
 	},
 	{
 		"ID": "16",
@@ -125,7 +140,8 @@
 		"Status": "001",
 		"Title": "Pellentesque cursus felis tincidunt ex malesuada luctus.",
 		"Count": 74,
-		"Sum": 853
+		"Sum": 853,
+		"StartDate": "20200601"
 	},
 	{
 		"ID": "17",
@@ -133,7 +149,8 @@
 		"Status": "002",
 		"Title": "In maximus neque sed purus posuere molestie.",
 		"Count": 46,
-		"Sum": 2392
+		"Sum": 2392,
+		"StartDate": "20200610"
 	},
 	{
 		"ID": "18",
@@ -141,7 +158,8 @@
 		"Status": "003",
 		"Title": "Proin vel mauris placerat, euismod erat at, volutpat arcu.",
 		"Count": 42,
-		"Sum": 2571
+		"Sum": 2571,
+		"StartDate": "20200620"
 	},
 	{
 		"ID": "19",
@@ -149,7 +167,8 @@
 		"Status": "001",
 		"Title": "Vestibulum venenatis lectus non orci imperdiet lacinia.",
 		"Count": 93,
-		"Sum": 491
+		"Sum": 491,
+		"StartDate": "20200701"
 	},
 	{
 		"ID": "20",
@@ -157,7 +176,8 @@
 		"Status": "002",
 		"Title": "Donec id lectus fringilla, finibus urna et, venenatis justo.",
 		"Count": 86,
-		"Sum": 3847
+		"Sum": 3847,
+		"StartDate": "20200710"
 	},
 	{
 		"ID": "21",
@@ -165,7 +185,8 @@
 		"Status": "003",
 		"Title": "Donec laoreet dolor malesuada quam faucibus ultricies.",
 		"Count": 53,
-		"Sum": 1357
+		"Sum": 1357,
+		"StartDate": "20200720"
 	},
 	{
 		"ID": "22",
@@ -173,7 +194,8 @@
 		"Status": "001",
 		"Title": "Fusce eu ex at massa feugiat suscipit ac nec lorem.",
 		"Count": 20,
-		"Sum": 2893
+		"Sum": 2893,
+		"StartDate": "20200801"
 	},
 	{
 		"ID": "23",
@@ -181,7 +203,8 @@
 		"Status": "002",
 		"Title": "Cras ullamcorper lectus id magna mattis placerat.",
 		"Count": 61,
-		"Sum": 2485
+		"Sum": 2485,
+		"StartDate": "20200810"
 	},
 	{
 		"ID": "24",
@@ -189,7 +212,8 @@
 		"Status": "003",
 		"Title": "Praesent ac magna facilisis, faucibus odio a, elementum sem.",
 		"Count": 32,
-		"Sum": 4859
+		"Sum": 4859,
+		"StartDate": "20200820"
 	},
 	{
 		"ID": "25",
@@ -197,7 +221,8 @@
 		"Status": "001",
 		"Title": "Aenean quis nisi condimentum, scelerisque velit eu, interdum est.",
 		"Count": 65,
-		"Sum": 2552
+		"Sum": 2552,
+		"StartDate": "20200901"
 	},
 	{
 		"ID": "26",
@@ -205,7 +230,8 @@
 		"Status": "002",
 		"Title": "Aenean pharetra urna vitae ex pulvinar euismod.",
 		"Count": 88,
-		"Sum": 4108
+		"Sum": 4108,
+		"StartDate": "20200910"
 	},
 	{
 		"ID": "27",
@@ -213,7 +239,8 @@
 		"Status": "003",
 		"Title": "Duis in massa ut ligula suscipit rutrum.",
 		"Count": 96,
-		"Sum": 2262
+		"Sum": 2262,
+		"StartDate": "20200920"
 	},
 	{
 		"ID": "28",
@@ -221,7 +248,8 @@
 		"Status": "001",
 		"Title": "Etiam id dui in tellus mollis venenatis.",
 		"Count": 52,
-		"Sum": 3784
+		"Sum": 3784,
+		"StartDate": "20201001"
 	},
 	{
 		"ID": "29",
@@ -229,7 +257,8 @@
 		"Status": "002",
 		"Title": "Nulla ultrices dolor dignissim sapien tincidunt, eget ultricies metus vestibulum.",
 		"Count": 13,
-		"Sum": 4178
+		"Sum": 4178,
+		"StartDate": "20201010"
 	},
 	{
 		"ID": "30",
@@ -237,7 +266,8 @@
 		"Status": "003",
 		"Title": "Suspendisse placerat augue id nunc rhoncus lacinia ac id nisl.",
 		"Count": 17,
-		"Sum": 417
+		"Sum": 417,
+		"StartDate": "20201020"
 	},
 	{
 		"ID": "31",
@@ -245,7 +275,8 @@
 		"Status": "001",
 		"Title": "Nam ornare nisl ac massa pretium ultrices.",
 		"Count": 84,
-		"Sum": 4310
+		"Sum": 4310,
+		"StartDate": "20201101"
 	},
 	{
 		"ID": "32",
@@ -253,7 +284,8 @@
 		"Status": "002",
 		"Title": "Cras consequat nibh sed neque imperdiet blandit.",
 		"Count": 20,
-		"Sum": 3684
+		"Sum": 3684,
+		"StartDate": "20201110"
 	},
 	{
 		"ID": "33",
@@ -261,7 +293,8 @@
 		"Status": "003",
 		"Title": "Etiam blandit enim ut felis tempor semper.",
 		"Count": 8,
-		"Sum": 1466
+		"Sum": 1466,
+		"StartDate": "20201120"
 	},
 	{
 		"ID": "34",
@@ -269,7 +302,8 @@
 		"Status": "001",
 		"Title": "Pellentesque porta elit eu urna lacinia, at maximus justo semper.",
 		"Count": 26,
-		"Sum": 364
+		"Sum": 364,
+		"StartDate": "20201201"
 	},
 	{
 		"ID": "35",
@@ -277,7 +311,8 @@
 		"Status": "002",
 		"Title": "Sed consectetur purus non tortor aliquam auctor.",
 		"Count": 39,
-		"Sum": 1495
+		"Sum": 1495,
+		"StartDate": "20201210"
 	},
 	{
 		"ID": "36",
@@ -285,7 +320,8 @@
 		"Status": "003",
 		"Title": "Nunc eget ex sit amet velit sollicitudin convallis iaculis vel magna.",
 		"Count": 33,
-		"Sum": 4230
+		"Sum": 4230,
+		"StartDate": "20201220"
 	},
 	{
 		"ID": "37",
@@ -293,7 +329,8 @@
 		"Status": "001",
 		"Title": "Ut hendrerit diam in mi posuere, sed auctor nunc varius.",
 		"Count": 9,
-		"Sum": 2089
+		"Sum": 2089,
+		"StartDate": "20210101"
 	},
 	{
 		"ID": "38",
@@ -301,7 +338,8 @@
 		"Status": "002",
 		"Title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		"Count": 32,
-		"Sum": 3627
+		"Sum": 3627,
+		"StartDate": "20210110"
 	},
 	{
 		"ID": "39",
@@ -309,7 +347,8 @@
 		"Status": "003",
 		"Title": "Praesent molestie mi sed est feugiat, eu mollis leo scelerisque.",
 		"Count": 65,
-		"Sum": 4890
+		"Sum": 4890,
+		"StartDate": "20210120"
 	},
 	{
 		"ID": "40",
@@ -317,7 +356,8 @@
 		"Status": "001",
 		"Title": "Donec rhoncus sapien id enim elementum tristique.",
 		"Count": 74,
-		"Sum": 3503
+		"Sum": 3503,
+		"StartDate": "20210201"
 	},
 	{
 		"ID": "41",
@@ -325,7 +365,8 @@
 		"Status": "002",
 		"Title": "Donec at metus vitae enim dapibus egestas.",
 		"Count": 50,
-		"Sum": 3154
+		"Sum": 3154,
+		"StartDate": "20210210"
 	},
 	{
 		"ID": "42",
@@ -333,7 +374,8 @@
 		"Status": "003",
 		"Title": "Pellentesque quis ligula non risus porta consectetur et ut risus.",
 		"Count": 77,
-		"Sum": 1992
+		"Sum": 1992,
+		"StartDate": "20210220"
 	},
 	{
 		"ID": "43",
@@ -341,7 +383,8 @@
 		"Status": "001",
 		"Title": "Sed ornare lectus ut dignissim porta.",
 		"Count": 37,
-		"Sum": 4372
+		"Sum": 4372,
+		"StartDate": "20210301"
 	},
 	{
 		"ID": "44",
@@ -349,7 +392,8 @@
 		"Status": "002",
 		"Title": "Donec semper neque sed arcu elementum, ac auctor arcu tincidunt.",
 		"Count": 89,
-		"Sum": 4836
+		"Sum": 4836,
+		"StartDate": "20210310"
 	},
 	{
 		"ID": "45",
@@ -357,7 +401,8 @@
 		"Status": "003",
 		"Title": "Aliquam egestas magna quis nunc interdum mollis.",
 		"Count": 66,
-		"Sum": 2661
+		"Sum": 2661,
+		"StartDate": "20210320"
 	},
 	{
 		"ID": "46",
@@ -365,7 +410,8 @@
 		"Status": "001",
 		"Title": "Praesent pretium felis sit amet ex pharetra, et consequat dolor euismod.",
 		"Count": 82,
-		"Sum": 4129
+		"Sum": 4129,
+		"StartDate": "20210401"
 	},
 	{
 		"ID": "47",
@@ -373,7 +419,8 @@
 		"Status": "002",
 		"Title": "Nam commodo lectus non augue mattis, at congue metus suscipit.",
 		"Count": 7,
-		"Sum": 4666
+		"Sum": 4666,
+		"StartDate": "20210410"
 	},
 	{
 		"ID": "48",
@@ -381,7 +428,8 @@
 		"Status": "003",
 		"Title": "Nunc bibendum dui sed ex ultricies, ut efficitur sapien ullamcorper.",
 		"Count": 82,
-		"Sum": 1635
+		"Sum": 1635,
+		"StartDate": "20210420"
 	},
 	{
 		"ID": "49",
@@ -389,7 +437,8 @@
 		"Status": "001",
 		"Title": "Pellentesque a quam volutpat, ultrices sem eu, mattis nibh.",
 		"Count": 89,
-		"Sum": 2951
+		"Sum": 2951,
+		"StartDate": "20210501"
 	},
 	{
 		"ID": "50",
@@ -397,6 +446,7 @@
 		"Status": "002",
 		"Title": "Pellentesque ut eros ac purus commodo venenatis.",
 		"Count": 65,
-		"Sum": 4081
+		"Sum": 4081,
+		"StartDate": "20210510"
 	}
 ]
