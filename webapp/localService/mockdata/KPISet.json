@@ -1,0 +1,26 @@
+[
+	{
+		"KpiID": "001",
+		"KpiText": "SM",
+		"KpiValue": 8,
+		"ForeCast": 4
+	},
+	{
+		"KpiID": "002",
+		"KpiText": "STM",
+		"KpiValue": 9,
+		"ForeCast": 4
+	},
+	{
+		"KpiID": "003",
+		"KpiText": "TTM",
+		"KpiValue": 7,
+		"ForeCast": 4
+	},
+	{
+		"KpiID": "004",
+		"KpiText": "KTM",
+		"KpiValue": 6,
+		"ForeCast": 4
+	}
+]

@@ -408,6 +408,146 @@
 				</Annotation>
 			</Annotations>
 
+			<Annotations Target="Metadata.KPIType">
+				<Annotation Term="UI.KPI" Qualifier="KPIValue">
+					<Record Type="UI.KPIType">
+						<PropertyValue Property="ID" String="kpiValue"/>
+						<PropertyValue Property="DataPoint" Path="@UI.DataPoint#KpiDP"/>
+						<PropertyValue Property="SelectionVariant" Path="@UI.SelectionVariant#KpiSV"/>
+						<PropertyValue Property="Detail">
+							<Record Type="UI.KPIDetailType">
+								<PropertyValue Property="SemanticObject" String="ZSPL_TEST_APP"/>
+								<PropertyValue Property="Action" String="display"/>
+								<PropertyValue Property="DefaultPresentationVariant" Path="@UI.PresentationVariant#KpiPV"/>
+							</Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+
+				<Annotation Term="UI.DataPoint" Qualifier="KpiDP">
+					<Record Type="UI.DataPointType">
+						<PropertyValue Property="Title" String="TTM"/>
+						<PropertyValue Property="Description" String="Avg KPIs of partner"/>
+						<PropertyValue Property="Value" Path="KpiValue"/>
+						<PropertyValue Property="Criticality" EnumMember="UI.CriticalityType/Negative"/>
+						<PropertyValue Property="Trend" EnumMember="UI.TrendType/StrongDown"/>
+						<PropertyValue Property="TargetValue" Decimal="7"/>
+
+						<PropertyValue Property="CriticalityCalculation">
+							<Record Type="UI.CriticalityCalculationType">
+								<PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Target"/>
+								<PropertyValue Property="ReferenceValue" Decimal="7"/>
+								<PropertyValue Property="DeviationRangeHighValue" String="8.5"/>
+								<PropertyValue Property="ToleranceRangeHighValue" String="7.5"/>
+								<PropertyValue Property="DeviationRangeLowValue" String="5.5"/>
+								<PropertyValue Property="ToleranceRangeLowValue" String="6.5"/>
+								
+								<PropertyValue Property="ConstantThresholds">
+									<Collection>
+										<Record Type="UI.LevelThresholdsType">
+											<PropertyValue Property="DeviationRangeHighValue" String="8.5"/>
+											<PropertyValue Property="ToleranceRangeHighValue" String="7.5"/>
+											<PropertyValue Property="DeviationRangeLowValue" String="5.5"/>
+											<PropertyValue Property="ToleranceRangeLowValue" String="6.5"/>
+										</Record>
+									</Collection>
+								</PropertyValue>
+							</Record>
+						</PropertyValue>
+						
+						<PropertyValue Property="ForecastValue" Path="ForeCast"/>
+						<PropertyValue Property="TrendCalculation">
+							<Record Type="UI.TrendCalculationType">
+								<PropertyValue Property="ReferenceValue" String="6.2"/>
+								<PropertyValue Property="UpDifference" Decimal="0.3"/>
+								<PropertyValue Property="StrongUpDifference" Decimal="0.5"/>
+								<PropertyValue Property="DownDifference" Decimal="0.3"/>
+								<PropertyValue Property="StrongDownDifference" Decimal="0.5"/>
+							</Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+
+				<Annotation Term="UI.PresentationVariant" Qualifier="KpiPV" >
+					<Record Type="UI.PresentationVariantType">
+						<PropertyValue Property="MaxItems" Int="5"/>
+						<PropertyValue Property="RequestAtLeast">
+							<Collection>
+								<PropertyPath>ForeCast</PropertyPath>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="SortOrder">
+							<Collection>
+								<Record Type="Common.SortOrderType">
+									<PropertyValue Property="Property" PropertyPath="KpiText"/>
+									<PropertyValue Property="Descending" Bool="true"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Visualizations">
+							<Collection>
+								<AnnotationPath>@UI.Chart#KpiCH</AnnotationPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+
+				<Annotation Term="UI.Chart" Qualifier="KpiCH">
+					<Record Type="UI.ChartDefinitionType">
+						<PropertyValue Property="Title" String="KPI"/>
+						<PropertyValue Property="Description" String="Relative graph"/>
+						<PropertyValue Property="ChartType" EnumMember="UI.ChartType/Column"/>
+						<PropertyValue Property="DimensionAttributes">
+							<Collection>
+								<Record Type="UI.ChartDimensionAttributeType">
+									<PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Category"/>
+									<PropertyValue Property="Dimension" PropertyPath="KpiText"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="MeasureAttributes">
+							<Collection>
+								<Record Type="UI.ChartMeasureAttributeType">
+									<PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
+									<PropertyValue Property="Measure" PropertyPath="KpiValue"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Dimensions">
+							<Collection>
+								<PropertyPath>KpiText</PropertyPath>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="Measures">
+							<Collection>
+								<PropertyPath>KpiValue</PropertyPath>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+
+				<Annotation Term="UI.SelectionVariant" Qualifier="KpiSV" >
+					<Record Type="UI.SelectionVariantType">
+						<PropertyValue Property="SelectOptions">
+							<Collection>
+								<Record Type="UI.SelectOptionType">
+									<PropertyValue Property="PropertyName" PropertyPath="KpiValue"/>
+									<PropertyValue Property="Ranges">
+										<Collection>
+											<Record Type="UI.SelectionRangeType">
+												<PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+												<PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/GE"/>
+												<PropertyValue Property="Low" String="5"/>
+											</Record>
+										</Collection>
+									</PropertyValue>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+
 			<Annotations Target="Metadata.PartnerType/PartnerID">
 				<Annotation Term="Common.Text" Path="PartnerText"/>
 			</Annotations>

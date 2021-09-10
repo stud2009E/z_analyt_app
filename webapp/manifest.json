@@ -121,6 +121,16 @@
 					"defaultCountMode": "Inline",
 					"refreshAfterChange": false
 				}
+			},
+			"kpi": {
+				"dataSource": "mainService",
+				"preload": true,
+				"settings": {
+					"refreshAfterChange": false,
+					"defaultCountMode": "Inline",
+					"defaultBindingMode": "TwoWay",
+					"useBatch": true
+				}
 			}
 		},
 		"extends": {
@@ -156,7 +166,7 @@
 				"list": true,
 				"settings": {
 					"tableSettings":{
-						"type": "GridTable",
+						"type": "AnalyticalTable",
 						"multiSelect": true,
 						"selectAll": true,
 						"selectionLimit": 20
@@ -169,9 +179,22 @@
 					"showGoButtonOnFilterBar": true,
 					"contentTitle": "{{contentAreaTitle}}",
 					"autoHide":false,
-					"filterDefaultsFromSelectionVariant":false
+					"filterDefaultsFromSelectionVariant":false,
+					"keyPerformanceIndicators":{  
+						"KPIRevenue":{  
+						   "model":"kpi",
+						   "entitySet":"KPISet",
+						   "qualifier":"KPIValue"
+						}
+					}
 				}
-			}
+			},
+			"pages":[{
+				"entitySet": "ActDataSet",
+				"component":{
+					"name": "sap.suite.ui.generic.template.ObjectPage"
+				}
+			}]
 		}]
 	}
 }
